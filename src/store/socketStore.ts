@@ -28,7 +28,7 @@ export const useSocketStore = defineStore('socketStore', () => {
 
   // REFS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // -> consts
-  const DEFAULT_WS_URL: Ref<string> = ref('ws://localhost:1234')
+  const DEFAULT_WS_URL: Ref<string> = ref('ws://127.0.0.1/ws/')
 
   // -> socket & connection
   const socket: Ref<WebSocket | null> = ref(null)
